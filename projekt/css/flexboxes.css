@@ -140,3 +140,10 @@ img {
 		font-size: 110%;
 	}
 }
+
+@media screen and (max-width: 600px){
+  .main-nav{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
