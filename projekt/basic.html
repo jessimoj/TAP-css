@@ -24,13 +24,22 @@
         <div class="info-doc">
         <h1>Documentation <small>(or: How to tap)</small></h1>
 
+        <ul class="nav">
+          <li><a href="#start">How to get started</a></li>
+          <li><a href="#flexbox-layots">Flexbox layouts</a></li>
+          <li><a href="#global-style">Stylesheet elements ("global")</a></li>
+          <li><a href="#tidy-doc">The Tidy stylesheet</a></li>
+          <li><a href="#playful-doc">The Playful stylesheet</a></li>
+
+        </ul>
+
         <h2 id="start">How to get started</h2>
 <p>Link your TAP-files to your projekt by making a link-tag in the html-documents head.
 For example, if you’ve put the files you want to use in a folder named ”css”, the link-tag should look like this:
   <br>  <span class="clean-code">&lt;link href="css/tidy.css" rel="stylesheet" type="text/css"&gt; </span><br>
 or, if you want to use the playful theme, you use this one:
          <br> <span class="clean-code"> &lt;link href="css/playful.css" rel="stylesheet" type=”text/css”&gt;</span> <br>
- <span class="heads-up">Note</span> that you’ll always need to have the flexboxes.css, basics.css and colorthemes.css files
+ <span class="heads-up">Note</span> that you’ll always need to have the <b>flexboxes.css, basics.css and colorthemes.css</b> files
 in your css folder, but you only need the tidy or playful stylesheet, depending on which one you use - if you don’t want
 to use both, that is.
 Which we would totally understand. If you want to, you can even go ahead and skip both of them as well, and just
@@ -153,7 +162,7 @@ Tip: We really like to use this class together with our forms (.form).</p>
   This stylesheet is made for a bit more quirky and fun look and feel.
 </p>
 
-<h2 id="color-themes"></h2>
+<h2 id="color-themes">The color themes</h2>
 <p>
 By applying class names to your div’s you can easily dress up your site with some nice color features.
 Nothing super fancy-schmancy or super dramatic, just a bit more... let’s say COLORFUL.
@@ -166,7 +175,31 @@ Because sometimes color makes stuff a bit more fun, that’s just all.
 For now, if you feel like spicin’ it up a bit from the allready very pleasant basic look,
 you can apply the following color themes as classes on your divs:
 </p>
+
+  <h3 class="doc-style">The "Be Light" Theme</h3>
+  <p>Gray shades to give you a crispy, smooth look.<br>
+  <b>Use class: </b> <span class="clean-code">.be-light</span><br>
+  <b>To style li-elements in the navbar, use class: </b> <span class="clean-code">.be-light-link</span><br>
+  </p>
+
+  <h3 class="doc-style">The "Shades of pink" Theme</h3>
+  <p>Pink is nice. This is, as the name kind of foretells, a theme with different shades of pink mixed with white details. <br>
+  <b>Use class: </b> <span class="clean-code">.shades-of-pink</span><br>
+  <b>To style li-elements in the navbar, use class: </b> <span class="clean-code">.shades-of-pink-link</span><br>
+  <b>To get a matching theme on your box-element, use class:</b> <span class="clean-code">.shades-of-pink-box</span>
+  </p>
+
+  <h3 class="doc-style">The "Aqua" Theme</h3>
+  <p>Cool shades of aquamarine.<br>
+  <b>Use class: </b> <span class="clean-code">.aqua</span><br>
+  <b>To style li-elements in the navbar, use class: </b> <span class="clean-code">.aqua-link</span><br>
+  </p>
       </div> <!-- closes info-doc-->
+      <div class="row full-row">
+        <p class="centered">
+          <span class="btn aqua"><a href="#start">To the top</a></span>
+        </p>
+      </div>
       </div>
     </div>
 </div>

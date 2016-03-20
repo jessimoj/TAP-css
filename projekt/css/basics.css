@@ -129,6 +129,7 @@ footer p::before {
 
 .centered{
   text-align: center;
+  justify-content: center;
 }
 
 /*Borrowing some basic button styling from bootstrap*/
