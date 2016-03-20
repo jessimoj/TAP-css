@@ -39,7 +39,7 @@ ul li {
 		letter-spacing: 2px;
 		text-decoration:none;
 		background-color: none;
-		color: #D9828B;
+		color: #000000;
 	}
 
 	ul li a:hover{
@@ -78,6 +78,19 @@ footer p::before {
 
   .info-doc{
     line-height: 1.5em;
+  }
+
+  .content-list ul{
+    display: -webkit-flex;
+      flex: 1;
+  			 -webkit-flex-direction: row;
+  			 justify-content: flex-start;
+  			 -webkit-flex-wrap: wrap;
+         list-style-type: none;
+  }
+
+  .content-list ul li{
+    display: block;
   }
   .doc-style{
     font-size: 130%;
