@@ -76,6 +76,12 @@ footer p::before {
   border-radius: 3px;
 }
 
+  .doc-style{
+    font-size: 130%;
+    margin-bottom: 0;
+    border-top: 1px solid #000000;
+  }
+
 /*THE BOX*/
 .box{
   margin-left: auto;

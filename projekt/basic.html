@@ -27,9 +27,9 @@
         <h2 id="start">How to get started</h2>
 <p>Link your TAP-files to your projekt by making a link-tag in the html-documents head.
 For example, if you’ve put the files you want to use in a folder named ”css”, the link-tag should look like this:
-  <br>  <pre>&lt;link href="css/tidy.css" rel="stylesheet" type="text/css"&gt; </pre><br>
+  <br>  <span class="clean-code">&lt;link href="css/tidy.css" rel="stylesheet" type="text/css"&gt; </span><br>
 or, if you want to use the playful theme, you use this one:
-         <br> <pre> &lt;link href="css/playful.css" rel="stylesheet" type=”text/css”&gt;</pre> <br>
+         <br> <span class="clean-code"> &lt;link href="css/playful.css" rel="stylesheet" type=”text/css”&gt;</span> <br>
  <span class="heads-up">Note</span> that you’ll always need to have the flexboxes.css, basics.css and colorthemes.css files
 in your css folder, but you only need the tidy or playful stylesheet, depending on which one you use - if you don’t want
 to use both, that is.
@@ -42,27 +42,130 @@ Which we would totally understand. If you want to, you can even go ahead and ski
 <p>
   <span class="bookmark">To start with, you need a container.</span> The allmighty flexbox container. Without it, you’re lost, pal.
   All of your flex elements needs to go into this one. A good place to put it would be directly under your documents &lt;body>-tag.
-<pre>
+<span class="clean-code">
   &lt;div class=”container”> &lt;/div>
-</pre>
+</span>
 For a simple and clean centered single column, use the .main-single class together with the .single class.
-<pre>
+<span class="clean-code">
   &lt;div class=”container”>
 &lt;div class=”main-single single”> YOUR CONTENT HERE
-&lt;/div>  &lt;/div>
-Want a multi column layout? Sure thing, buddy!  &lt;div class="container row-contain">
-      &lt;div class="row-col-main col-b ”>
+&lt;/div>  &lt;/div> </span>
+Want a multi column layout? Sure thing, buddy!  <br>
+<span class="clean-code"> &lt;div class="container row-contain">
+      &lt;div class="row-col-main col-b ”><br>
 This div will be the main column (because of the .row-col-main class) and will be placed as the second column (since it’s also got the .col-b class).
 &lt;/div> &lt;/div>
-</pre>
-
-Use the col-# classes on your divs to change the order of them! They are as follows:   .col-a = order #1
-<pre>.col-b = order #2
-.col-c = order #3
-.col-d = order #4
-</pre>
+</span>
 </p>
 
+<p>Use the col-# classes on your divs to change the order of them! They are as follows:   <span class="clean-code"><br>
+.col-a = order #1<br>
+.col-b = order #2 <br>
+.col-c = order #3 <br>
+.col-d = order #4 <br>
+</span>
+</p>
+
+<h2 class="global-style">Stylesheet elements ("global")</h2>
+<p>Except from the usual tags and elements, the TAP-stylesheets do have some stuff you may find useful.
+  These elements will (as you may already have figured out) look a bit different depending on which of
+  the stylesheets you decide to use. To make it easier for you to switch between the two stylesheets, these elements
+  don’t have different class names depending on which ”look” you would want - it’s all depending on which stylesheet
+  you are currently using: hence the ”global” heading.</p>
+
+  <h3 class="doc-style">The box</h3>
+<p>Sometimes you want something to be a bit more eye-catching, whether it’s some extra important information
+or just something that deserves a fabulous box to hang out inside of. There are no rules for the box!
+Well, except the ones your stylesheet sets, of course. <br>
+Just give your div a .box-class and you got it! <br>
+<span class="clean-code"> &lt;div class=”box”> &lt;/div> </span> <br>
+Tip: We really like to use this class together with our forms (.form).</p>
+
+<h3 class="doc-style">Media</h3>
+<p>
+  Got media that you want centered? Use the .media-center class!<br>
+  Like this example:<br>
+  <span class="clean-code">
+  &lt;img class="media-center" src=”pics/cat.gif” alt="compute cat" /> &lt;/span>
+</p>
+
+<h3 class="doc-style">Sources</h3>
+<p>
+  Use the .source-class to get a right-aligned, italic styled citation under for example a
+  blockquote o a &lt;p>-tag.<br>
+  <span class="clean-code">
+  &lt;span class="source">Wikipedia &lt;/span>
+  </span>
+</p>
+
+<h3 class="doc-style">The heads up</h3>
+<p>
+  When you want to make sure your visitors don’t miss certain information, put it in a span-tag
+  with the class .heads-up (<span class="clean-code">&lt;span class=”heads-up”>Note&lt;/span></span>).<br>
+  <span class="heads-up">It looks like this!</span>
+</p>
+
+<h3 class="doc-style">The bookmark</h3>
+<p>
+  To markup important anchors in your text etc, use the class <span class="clean-code">.bookmark</span> on a span or p-tag.
+  It’s kind of a sibling to the heads-up class, but with some slight differences. <br>
+  <span class="bookmark">It looks like this!</span>
+</p>
+
+<h3 class="doc-style">The navbar</h3>
+<p>
+  To make your navbar appear all flexy and nice, use the .nav and .main-nav classes. <br>
+  <span class="clean-code">
+    &lt;ul class="nav main-nav”><br>
+     &lt;li>list-elements&lt;/li><br>
+     ...<br>
+&lt;/ul>
+  </span>
+</p>
+
+<h3 class="doc-style">Super big text</h3>
+<p>
+  The bigger the better, right? Well, sometimes you really just want to get your message through and why not
+  do that by using really big letters? Try the <span class="clean-code">.super-big</span> class! It will be fun! <br>
+<p class=”super-big”> </p>
+</p>
+
+<h3 class="doc-style">Centered text</h3>
+<p>
+  Use the class <span class="clean-code">.centered</span> and you got it!
+</p>
+
+<h3 class="doc-style"> The story class</h3>
+<p>
+  Adding this class (<span class="clean-code">.story</span>) to a div will make the first letter in every
+  &lt;p>-tag look a little bit more ”dramatic”, like in a storybook.
+    This is a good one to make longer texts feel a bit more interesting.
+</p>
+
+<h2 id="tidy-doc">The tidy stylesheet</h2>
+<p>
+  This stylesheet is supposed to give you a more clean yet sleek look on your webpage.
+  Nothing extraordinary, but not just a simple view that gets your visitors bored.
+</p>
+
+<h2 id="playful-doc">The playful stylesheet</h2>
+<p>
+  This stylesheet is made for a bit more quirky and fun look and feel.
+</p>
+
+<h2 id="color-themes"></h2>
+<p>
+By applying class names to your div’s you can easily dress up your site with some nice color features.
+Nothing super fancy-schmancy or super dramatic, just a bit more... let’s say COLORFUL.
+Because sometimes color makes stuff a bit more fun, that’s just all.
+<i>For the moment there’s just a few themes, but if you stick around there may be more comin’. </i>
+</p>
+<p>
+  <span class="heads-up">Note</span> that you can mix the color themes by adding different classes to your divs!
+  Like, why not a pink themed column next to a light gray one? Fabulous.<br>
+For now, if you feel like spicin’ it up a bit from the allready very pleasant basic look,
+you can apply the following color themes as classes on your divs:
+</p>
       </div> <!-- closes info-doc-->
       </div>
     </div>
