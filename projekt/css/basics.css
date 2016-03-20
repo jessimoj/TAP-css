@@ -67,6 +67,15 @@ footer p::before {
   border-radius: 3px;
 }
 
+.bookmark{
+  display: inline-block;
+  color: #ffffff;
+  font-weight: bold;
+  background: rgba(23, 99, 228, 0.38);
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
 /*THE BOX*/
 .box{
   margin-left: auto;
