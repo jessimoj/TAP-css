@@ -76,15 +76,18 @@ footer p::before {
   border-radius: 3px;
 }
 
+  .info-doc{
+    line-height: 1.5em;
+  }
   .doc-style{
     font-size: 130%;
-    margin-bottom: 0;
+    margin-bottom: -0.5em;
     border-top: 1px solid #000000;
   }
 
   .clean-code{
     font-family: "courier new";
-    line-height: 2em;
+    line-height: 2.5em;
   }
 
 /*THE BOX*/
