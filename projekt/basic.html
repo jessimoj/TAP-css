@@ -23,7 +23,8 @@
       <div class="single">
         <div class="info-doc">
         <h1>Documentation <small>(or: How to tap)</small></h1>
-        <h2>How to get started</h2>
+
+        <h2 id="start">How to get started</h2>
 <p>Link your TAP-files to your projekt by making a link-tag in the html-documents head.
 For example, if you’ve put the files you want to use in a folder named ”css”, the link-tag should look like this:
   <br>  <pre>&lt;link href="css/tidy.css" rel="stylesheet" type="text/css"&gt; </pre><br>
@@ -36,7 +37,33 @@ Which we would totally understand. If you want to, you can even go ahead and ski
  rely on the basic stylesheet and the flexbox layouts. THE POSSIBILITIES ARE ALMOST ENDLESS. <br>
  (Well, no. Not really. This is not that big of a framework, it’s more like a quick and nice way to get started with a project. But still.)
         </p>
-      </div>
+
+<h2 id="flexbox-layouts">Flexbox layout</h2>
+<p>
+  <span class="bookmark">To start with, you need a container.</span> The allmighty flexbox container. Without it, you’re lost, pal.
+  All of your flex elements needs to go into this one. A good place to put it would be directly under your documents &lt;body>-tag.
+<pre>
+  &lt;div class=”container”> &lt;/div>
+</pre>
+For a simple and clean centered single column, use the .main-single class together with the .single class.
+<pre>
+  &lt;div class=”container”>
+&lt;div class=”main-single single”> YOUR CONTENT HERE
+&lt;/div>  &lt;/div>
+Want a multi column layout? Sure thing, buddy!  &lt;div class="container row-contain">
+      &lt;div class="row-col-main col-b ”>
+This div will be the main column (because of the .row-col-main class) and will be placed as the second column (since it’s also got the .col-b class).
+&lt;/div> &lt;/div>
+</pre>
+
+Use the col-# classes on your divs to change the order of them! They are as follows:   .col-a = order #1
+<pre>.col-b = order #2
+.col-c = order #3
+.col-d = order #4
+</pre>
+</p>
+
+      </div> <!-- closes info-doc-->
       </div>
     </div>
 </div>
