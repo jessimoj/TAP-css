@@ -1,0 +1,65 @@
+/* THIS IS YOUR TIDY AND SLEEK STYLESHEET */
+@import 'flexboxes.css';
+@import 'basics.css';
+@import 'colorthemes.css';
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+header, h1, h2, h3, h4, h5, h6{
+  font-family: "Quicksand";
+  font-weight: bold;
+}
+
+h1{
+  font-size: 250%;
+}
+
+h2{
+  font-size: 200%;
+}
+
+h3{
+  font-size: 180%;
+}
+
+h4{
+  font-size: 160%;
+}
+
+h5{
+  font-size: 140%;
+}
+
+h6{
+  font-size: 120%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-bottom: .5em;
+}
+
+header ul li a{
+  font-size: 85%;
+}
+
+blockquote{
+  display: inline-block;
+  padding-left: .5em;
+  font-size: 125%;
+  font-family: "Quicksand", serif;
+}
+  blockquote::before{
+    content: '"';
+  }
+
+  blockquote::after{
+    content: '"';
+  }
+
+  .story p::first-letter{
+    font-family: "Quicksand";
+    font-size: 150%;
+  }
+
+  .form{
+    font-size: 110%;
+  }

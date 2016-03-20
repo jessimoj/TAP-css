@@ -1,0 +1,142 @@
+/* FLEXBOXES
+============*/
+
+/* This one right here is the container where the magic begins. You need this for everything else flexbox-related to work properly. */
+.container{
+  display: flex;
+}
+
+/*NAVBAR
+---------*/
+.main-nav {
+	display: -webkit-flex;
+			 -webkit-flex-direction: row;
+			 -webkit-justify-content: space-between;
+			 -webkit-flex-wrap: wrap;
+       list-style-type: none;
+}
+
+.nav li{
+	-webkit-flex-grow: 1;
+}
+
+.nav li a{
+  text-decoration: none;
+}
+
+
+
+
+/* LAYOUTS
+----------- */
+
+/* centered single column layout */
+.main-single {
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+
+  .single {
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    text-align: justify;
+  }
+
+
+/*COLUMNS FOR MULTI LAYOUT
+-------------------------- */
+
+.col{
+  flex: 1;
+  align-self: stretch;
+  width: auto;
+
+}
+
+/*set this so that you get a nice and sturdy margin for your content*/
+.row-contain{
+  margin-left: 5em;
+  margin-right: 5em;
+}
+
+.row{
+  flex-direction: row;
+  flex: 1;
+}
+
+  .row-col-main{
+  flex: 2;
+  }
+
+  .row-col-small{
+    flex: .5;
+  }
+
+.col-a{
+  order: 1;
+}
+
+.col-b{
+  order: 2;
+}
+
+.col-c{
+  order: 3;
+}
+
+.col-d{
+  order: 4;
+}
+
+.col-a, .col-b, .col-c, .col-d{
+  padding: .5em;
+  margin: .5em;
+}
+
+img {
+  display:block;
+  margin:1.5em 0;
+  max-width:100%;
+  height: auto;
+}
+
+.media-center{
+  display: block;
+  margin:1.5em 0;
+  max-width:100%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*FOOTER*/
+/* centered footer */
+.full-row{
+  flex: 1;
+  order: 99;
+}
+
+.footer-center{
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*MAKES MULTI COL-LAYOUT TO SINGLE COL ON SMALL SCREENS*/
+@media screen and (max-width: 999px) {
+	.row-contain {
+		-webkit-flex-direction: column;
+}
+
+	.col {
+		margin-top: .5em;
+		font-size: 110%;
+	}
+}

@@ -1,0 +1,80 @@
+/*Flexbox-propertys*/
+
+/*====== FLEX CONTAINERS =======*/
+/*This is the MAIN CONTAINER. You always need this one, right here, for the flexbox to work it's magic.*/
+.container {
+  display: flex;
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*ROW*/
+.row{
+  flex-direction: row;
+  height: auto;
+}
+
+.full-row{
+  flex: 1;
+  order: 99;
+}
+
+.footer-center{
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/*COLUMN*/
+.col{
+  flex-direction: column;
+  height: auto;
+  flex: 1;
+}
+
+/*Column with sidebar*/
+.col-main{
+  flex: 1.5;
+}
+
+  .col-sidebar{
+    flex: .5;
+  }
+
+    .sidebar-left{
+      margin-right: 5em;
+    }
+
+    .sidebar-right{
+      margin-left: 5em;
+    }
+
+.col-bigger{
+  flex: 2;
+}
+
+
+/*SINGLE COLUMN with contents in a row layout - use this with the .col-class! */
+
+.group-container{
+	display: flex;
+	flex: wrap;
+	flex-direction: row;
+}
+
+.group{
+	display: flex-wrap;
+	align-items: flex-start;
+	display: inline-block;
+	height: auto;
+	text-align: justify;
+
+}
+
+.group img{
+	margin-right: auto;
+	margin-left: auto;
+}

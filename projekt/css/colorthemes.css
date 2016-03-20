@@ -1,0 +1,111 @@
+/* COLOR THEMES */
+
+/* THE "BE LIGHT" THEME */
+.be-light{
+  background-color: #FAFAFA;
+  padding-bottom: .5em;
+}
+
+  .be-light a{
+    color: #CDAF95;
+    text-decoration: none;
+  }
+
+  .be-light a:hover{
+    color: #8B8682;
+    text-decoration: underline;
+  }
+
+  .be-light a:visited{
+    color: #EECBAD;
+  }
+
+  .be-light a:active{
+    color: #FFDAB9;
+  }
+
+.be-light-link a{
+  color: #FAFAFA;
+  background-color: #C1CDCD;
+}
+
+.be-light-link a:hover{
+  color: #C1CDCD;
+  transition-duration: .3s;
+  background-color: #FAFAFA;
+}
+
+/* THE "SHADES OF PINK" THEME */
+
+.shades-of-pink{
+  background-color: #FFF0F5;
+  border-radius: 5px;
+  padding-bottom: .5em;
+}
+    .shades-of-pink a{
+      color: #EE3A8C;
+      text-decoration: none;
+    }
+
+    .shades-of-pink a:hover{
+      color: #FF69B4;
+      background: #ffffff;
+    }
+
+    .shades-of-pink a:visited{
+      color: #838B8B;
+    }
+
+    .shades-of-pink a:active{
+      color: #668B8B;
+    }
+
+/* A box that matches the pink theme! Yaay! */
+.shades-of-pink-box{
+  background-color: #f9e6f7;
+}
+
+.shades-of-pink-link a{
+  color: #FF3E96;
+  background-color: #FFFAFA;
+}
+
+.shades-of-pink-link a:hover{
+  color: #FFFAFA;
+  transition-duration: .3s;
+  background-color: #FF3E96;
+}
+
+
+/* THE "AQUA" THEME */
+
+.aqua {
+  background-color: #BFEFFF;
+  padding-bottom: .5em;
+}
+
+    .aqua a{
+      color: #6E7B8B;
+      text-decoration: none;
+    }
+
+    .aqua a:hover{
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .aqua a:visited{
+      color: #9FB6CD;
+    }
+
+    .aqua a:active{
+      color: #6C7B8B;
+    }
+
+  .aqua-link a{
+
+  }
+
+  .aqua-link a:hover{
+
+  }
