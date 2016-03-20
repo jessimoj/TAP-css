@@ -80,7 +80,7 @@
 /* THE "AQUA" THEME */
 
 .aqua {
-  background-color: #e1eff4;
+  background-color: #b9fae4;
   padding-bottom: .5em;
 }
 
@@ -103,11 +103,11 @@
     }
 
   .aqua-link a{
-    color: rgba(5, 111, 198, 0.13);
-    background-color: #BFEFFF;
+    color: #ffffff;
+    background-color: #7FFFD4;
   }
 
   .aqua-link a:hover{
-    color: #BFEFFF;
+    color: #000000;
     background-color: rgba(5, 111, 198, 0.13);
   }
