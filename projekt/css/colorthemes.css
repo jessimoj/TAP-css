@@ -103,9 +103,11 @@
     }
 
   .aqua-link a{
-
+    color: rgba(5, 111, 198, 0.13);
+    background-color: #BFEFFF;
   }
 
   .aqua-link a:hover{
-
+    color: #BFEFFF;
+    background-color: rgba(5, 111, 198, 0.13);
   }
